@@ -2,6 +2,11 @@ header {
     width: 100vw;
 }
 
+section {
+    margin: 1rem 0rem;
+    width: 100%;
+}
+
 nav {
     width: 100vw;
     display: flex;
@@ -10,7 +15,11 @@ nav {
     background-color: #610C9F;
 }
 
-nav ul {
+nav .logo {
+    color: white;
+}
+
+nav .nav-links {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -19,17 +28,21 @@ nav ul {
     gap: 0.8rem;
 }
 
-nav ul li {
+nav .nav-links li {
     list-style: none;
 }
 
-nav ul li a {
+nav .nav-links li a {
     color: white;
 }
 
-section {
-    margin: 1rem 0rem;
-    width: 100%;
+.icono-menu {
+    display: none;
+    color: white;
+}
+
+.menu-mobile {
+    display: none;
 }
 
 
@@ -70,5 +83,42 @@ section {
 }
 
 @media screen and (max-width: 767px) {
-    
+    nav {
+        justify-content: space-between;
+    }
+
+    nav .nav-links {
+        display: none;
+    }
+
+    .icono-menu {
+        display: block;
+        width: 2rem;
+    }
+
+    .menu-mobile.show {
+        display: block;
+        background-color: lightblue;
+        position: absolute;
+        /* top: 60px; */
+        right: 0;
+        width: 70%;
+        padding: 1rem;
+    }
+
+    .menu-mobile ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .mobile-menu li {
+        margin: 10px;
+    }
+
+    .mobile-menu li a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
 }
