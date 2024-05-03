@@ -1,0 +1,42 @@
+.navbar-inferior {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    background-color: #610C9F;
+    height: 3.5rem;
+    max-height: 3.5rem;
+}
+
+.accesos {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.acceso {
+    background-color: #7e1fc2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 4.5rem;
+    border-radius: 25px;
+    padding: 3px 0;
+}
+
+.acceso-icono {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.acceso-nombre {
+    font-size: 0.8rem;
+    color: white;
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-inferior {
+        display: block;
+    }
+}
